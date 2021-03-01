@@ -1,0 +1,23 @@
+
+COMMENTS
+• Documents and folders preceded by 'jeh' are not part of the code.  They are left in to show process and provide the feedback requested in the README file.
+
+
+• I used tools to disect the images for information to guide styling, but did not use them for the page itself where it was clear that full css was requested (e.g., the buttons and text).
+
+• TOOLS:
+  - Color picker (Sublime Text 3 package) to get an initial color for css colors, then  used a more sensitive online color picker to adjust from there.
+
+  - Krita (alternative to Gimp): converted black background of Hi lton logo into a   transparency layer,
+
+  - Snapshot: A screen-capture utility that allows zooming to select an exact area, then  prints out pixel sizes of the size at 100%.
+
+
+ASSUMPTIONS
+• SPACING: Most of my margin, padding and sizing decisions were dictated by the mockup provided.  However, I used rem units almost everywhere, as I understand they provide more consistent viewing across different pixel densities.
+• The instructions indictated a mobile focus in terms of responsive design, so I made the page responsive up to the width of the hotel picture. Admittedly, I may have misunderstood what was wanted in terms of responsiveness.
+
+COMPROMISES
+• I was not quite sure what to do with the data from the .jpg.xml files.  I decided to not use the information because I was running short on time.
+
+John Hillert

@@ -1,0 +1,31 @@
+{
+  "name": "hilton1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "cross-env": "^5.2.0",
+    "next": "^9.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-cookie": "^4.0.1",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1"
+  }
+}

@@ -1,0 +1,13 @@
+ASSUMPTIONS
+  • I took from the README file that the app should meet all six bullets, but that testing should be adequate to show familiarity.  I provide coverage for half the bullet points, plus two snapshots.
+
+  • I assumed a cookie would be an appropriate data store, because of the low sensitivity of the data and its compatability with SSR.
+
+  • After clarifying with my recruiter, I decided not to spend too much time styling the form elements, at least where the styling appeared to be related to browser CSS defaults.
+
+COMPROMISES
+  • Test coverage goes about half way through the bullet points in the Readme File because I was running short on time.
+
+  • The beginning of the program, where the Index.jsx feeds data to Form.jsx, is a little hacky.  I chose to manage state with the useReducer hook, which was not as great an idea as I thought it would be.  At least in an SSR context, because I had difficulty preventing the data from loading temporarily before saved data appeared.  Rather than rewrite much of it to integrate class components, I wrapped my index file in a class-based render prop, and got the benefits of component did mount that way.  If it a project that peole relied on, I probably have rewritten it into more proper form.
+
+John Hillert

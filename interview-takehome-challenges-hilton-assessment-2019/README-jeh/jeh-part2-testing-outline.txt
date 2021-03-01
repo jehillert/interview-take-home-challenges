@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+  OUTLINE OF TESTS
+-------------------------------------------------------------------------------
+
+TEST 1
+  - renders Dropdown fields of Cards 2-4 by default when cookies loaded with userData are absent
+  - enables the Dropdown fields of Card 2 in response to checking Checkbox 2
+  - has an Adults Dropdown with an array having values of only 1 and 2
+  - has a Children Dropdown with an array having values of only 0, 1 and 2
+
+TEST 2
+  - it automatically checks Checkbox 2 in response to checking Checkbox 3
+  - it automatically checks Checkboxes 2 & 3 in response to checking Checkbox 4
+
+TEST 3
+
+  SNAPSHOT:
+    it presents <Card></Card> in an appearance consistent with Card 1 (i.e., enabled)
+
+  UNIT:
+    - it enables both Dropdowns of Card 2 in response to checking Checkbox 2
+    - it enables both Dropdowns of Card 3 in response to checking Checkbox 3
+    - it enables both Dropdowns of Card 4 in response to checking Checkbox 4
+
+-------------------------------------------------------------------------------
+
+TEST 4
+
+  SNAPSHOT
+    it presents <Card></Card> in an appearance consistent with Card 2 in a disabled state
+
+  DISABLING
+    - it disables both Dropdowns of Card 2 in response to unchecking Checkbox 2
+    - it disables both Dropdowns of Card 3 in response to unchecking Checkbox 3
+    - it disables both Dropdowns of Card 4 in response to unchecking Checkbox 4
+
+  DEFAULT VALUES
+    - it sets Adults Dropdown 2 to value 1 and Children Dropdown to value 0 in response to unchecking Checkbox 2
+    - it sets Adults Dropdown 3 to value 1 and Children Dropdown to value 0 in response to unchecking Checkbox 3
+    - it sets Adults Dropdown 4 to value 1 and Children Dropdown to value 0 in response to unchecking Checkbox 4
+
+-------------------------------------------------------------------------------
+TEST 5
+  - in response to unchecking Checkbox 2, the application:\n\tdisables and sets to 1 the Adults Dropdowns of Cards 2-4;\n\t disables and sets to 0 the Children Dropdowns of Cards 2-4; and\n\t unchecks the Checkboxes of Cards 3-4.
+
+  - in response to unchecking Checkbox 3, the application:\n\tdisables and sets to 1 the Adults Dropdowns of Cards 3-4;\n\tdisables and sets to 0 the Children Dropdowns of Cards 3-4; and\n\tunchecks the Checkbox of Card 4
+
+  - in response to unchecking Checkbox 4, the application:\n\tdisables and sets to 1 the Adult Dropdown of Card 4;\n\t disables and sets to 0 the Children Dropdown of Card 4;\n\t and unchecks the Checkbox of, Card 4
+
+-------------------------------------------------------------------------------
+TEST 6
+  PRESERVES STATE
+    it writes the current state of all checkboxes to a cookie in response to clicking Submit
+
+  RETRIEVES STATE
+    upon reload, it presents the Cards according to the state written the cookie
+

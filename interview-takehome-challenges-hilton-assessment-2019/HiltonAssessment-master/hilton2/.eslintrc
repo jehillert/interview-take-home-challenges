@@ -1,0 +1,33 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "react-hooks"
+  ],
+  "settings": {
+    "import/resolver": "webpack",
+  },
+  "rules": {
+    "no-console": "off",
+    "indent": "off",
+    "jsx-quotes": [
+      2,
+      "prefer-single"
+    ],
+    "react/react-in-jsx-scope":"off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-quotes": 0,
+    "template-curly-spacing": "off",
+    "import/prefer-default-export": "off",
+  },
+  // "globals": {
+  //   "window": true,
+  //   "document": true,
+  //   "navigator": true
+  // },
+}
